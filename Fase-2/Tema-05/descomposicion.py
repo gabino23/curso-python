@@ -11,4 +11,8 @@ if len(sys.argv) == 2:
         longitud=len(cadena)
 
         for i in range(longitud):
-         print("{:04d}".format(int(cadena[i])))
+         print("{:04d}".format(int(cadena[longitud-1-i])*10**i))
+
+else:
+    print("Error- numero es incorrectos")
+    print("Ejemplo:descomposicion.py[0-9999]")
